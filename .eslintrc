@@ -1,0 +1,10 @@
+---
+  extends:
+    - defaults/configurations/walmart/es6-node
+  rules:
+    space-before-function-paren: [2, "never"]
+    space-after-keywords: 0
+    func-style: [2, "declaration"]
+    no-console: 0
+    no-process-exit: 0
+    no-cond-assign: 0

@@ -1,0 +1,5 @@
+node_modules/
+.*.swp
+/config.json
+/evil-hosts.json
+/evil-networks.json

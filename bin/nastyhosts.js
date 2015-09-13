@@ -3,9 +3,13 @@ require("use-strict");
 const path = require("path");
 const fs = require("fs");
 const argv = require("minimist")(process.argv.slice(2));
-const configPath = path.resolve(__dirname, "..", "config.json");
-const hostnamesPath = path.resolve(__dirname, "..", "evil-hosts.json");
-const networksPath = path.resolve(__dirname, "..", "evil-networks.json");
+
+process.chdir(path.resolve(__dirname, ".."));
+
+const configPath = path.resolve("config.json");
+const hostnamesPath = path.resolve("evil-hosts.json");
+const networksPath = path.resolve("evil-networks.json");
+
 
 if(argv.init) {
   fs.access(configPath, function(err) {
@@ -40,6 +44,9 @@ if(argv.init) {
     }
   });
   require("../lib/config.js")(function(config) {
-    require("../lib/server.js")(config);
+    const plugins = config.plugins.map(function(plugin) {
+      return require("nastyhosts-"+plugin+"-plugin")(config);
+    });
+    require("../lib/server.js")(config, plugins);
   });
 }

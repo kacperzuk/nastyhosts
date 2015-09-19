@@ -1,6 +1,6 @@
 {
   "name": "nastyhosts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Identify nasty hosts and networks.",
   "main": "src/app.js",
   "repository": "https://github.com/kacperzuk/nastyhosts",
@@ -19,7 +19,7 @@
     "start": "node --use_strict src/app.js",
     "lint": "./node_modules/.bin/eslint ."
   },
-  "author": "Kacper Żuk <contact@kacperzuk.pl",
+  "author": "Kacper Żuk <contact@kacperzuk.pl>",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^1.3.1",

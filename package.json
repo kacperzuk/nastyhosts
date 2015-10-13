@@ -1,8 +1,8 @@
 {
   "name": "nastyhosts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Identify nasty hosts and networks.",
-  "main": "src/app.js",
+  "main": "bin/nastyhosts.js",
   "repository": "https://github.com/kacperzuk/nastyhosts",
   "dependencies": {
     "express": "^4.13.3",

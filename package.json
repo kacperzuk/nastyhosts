@@ -16,7 +16,7 @@
     "validator": "^4.0.5"
   },
   "scripts": {
-    "start": "node --use_strict bin/nastyhosts.js",
+    "start": "node --use_strict --harmony bin/nastyhosts.js",
     "lint": "./node_modules/.bin/eslint ."
   },
   "author": "Kacper Żuk <contact@kacperzuk.pl>",

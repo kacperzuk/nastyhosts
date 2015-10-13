@@ -45,7 +45,7 @@ if(argv.init) {
   });
   require("../lib/config.js")(function(config) {
     const plugins = config.plugins.map(function(plugin) {
-      return require("nastyhosts-"+plugin+"-plugin")(config);
+      return require("nastyhosts-" + plugin + "-plugin")(config);
     });
     require("../lib/server.js")(config, plugins);
   });

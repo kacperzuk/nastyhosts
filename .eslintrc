@@ -8,3 +8,4 @@
     no-console: 0
     no-process-exit: 0
     no-cond-assign: 0
+    global-require: 0

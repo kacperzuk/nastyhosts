@@ -1,6 +1,6 @@
 {
   "name": "nastyhosts",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Identify nasty hosts and networks.",
   "main": "bin/nastyhosts.js",
   "repository": "https://github.com/kacperzuk/nastyhosts",

@@ -1,31 +1,32 @@
 {
   "name": "nastyhosts",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "description": "Identify nasty hosts and networks.",
   "main": "bin/nastyhosts.js",
   "repository": "https://github.com/kacperzuk/nastyhosts",
   "dependencies": {
     "byline": "^4.2.1",
-    "express": "^4.13.3",
+    "express": "^4.13.4",
     "express-limiter": "^1.6.0",
-    "ioredis": "^1.9.1",
+    "ioredis": "^2.0.1",
+    "ip2asn": "0.0.4",
     "ipcheck": "^0.1.0",
-    "lodash.difference": "^3.2.2",
+    "lodash.difference": "^4.3.0",
     "minimist": "^1.2.0",
-    "request": "^2.65.0",
+    "request": "^2.72.0",
     "use-strict": "^1.0.1",
-    "validator": "^4.1.0"
+    "validator": "^5.4.0"
   },
   "scripts": {
-    "start": "node --use_strict --harmony bin/nastyhosts.js",
+    "start": "node --harmony bin/nastyhosts.js",
     "lint": "./node_modules/.bin/eslint ."
   },
   "author": "Kacper Żuk <contact@kacperzuk.pl>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.7.1",
-    "eslint-config-defaults": "^7.0.1",
-    "eslint-plugin-filenames": "^0.1.2"
+    "eslint": "^2.12.0",
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-filenames": "^1.0.0"
   },
   "engines": [
     {

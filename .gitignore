@@ -4,3 +4,5 @@ npm-debug.log
 /config.json
 /evil-hosts.json
 /evil-networks.json
+/evil-asns.json
+/log.txt

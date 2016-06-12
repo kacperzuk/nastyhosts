@@ -1,4 +1,4 @@
-require("use-strict");
+"use strict";
 
 const path = require("path");
 const fs = require("fs");
@@ -9,6 +9,7 @@ process.chdir(path.resolve(__dirname, ".."));
 const configPath = path.resolve("config.json");
 const hostnamesPath = path.resolve("evil-hosts.json");
 const networksPath = path.resolve("evil-networks.json");
+const asnsPath = path.resolve("evil-asns.json");
 
 
 if(argv.init) {
@@ -33,8 +34,15 @@ if(argv.init) {
     }
   });
 
+  fs.access(asnsPath, (err) => {
+    if(err) {
+      console.log(`Creating ${asnsPath}`);
+      fs.writeFile(asnsPath, JSON.stringify([], null, 2));
+    }
+  });
+
 } else {
-  [configPath, hostnamesPath, networksPath].forEach((v) => {
+  [configPath, hostnamesPath, networksPath, asnsPath].forEach((v) => {
     try {
       fs.accessSync(v);
     } catch(err) {

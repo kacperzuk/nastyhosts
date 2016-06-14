@@ -10,7 +10,7 @@
     "express-limiter": "^1.6.0",
     "ioredis": "^2.0.1",
     "ipcheck": "^0.1.0",
-    "iptoasn": "0.0.3",
+    "iptoasn": "0.0.4",
     "lodash.difference": "^4.3.0",
     "minimist": "^1.2.0",
     "request": "^2.72.0",

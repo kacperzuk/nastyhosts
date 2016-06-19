@@ -1,6 +1,6 @@
 {
   "name": "nastyhosts",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Identify nasty hosts and networks.",
   "main": "bin/nastyhosts.js",
   "repository": "https://github.com/kacperzuk/nastyhosts",
@@ -8,6 +8,7 @@
     "byline": "^4.2.1",
     "express": "^4.13.4",
     "express-limiter": "^1.6.0",
+    "fast-iptocountry": "0.0.4",
     "ioredis": "^2.0.1",
     "ipcheck": "^0.1.0",
     "iptoasn": "0.0.5",

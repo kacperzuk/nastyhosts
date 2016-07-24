@@ -6,7 +6,7 @@ if(process.argv.length < 3) {
 }
 
 const ip2asn = require('iptoasn')(process.argv[2]);
-ip2asn.update(null, (status) => {
+ip2asn.update("routeviews", (status) => {
   if(status == "cache_locked") {
   console.error("Cache is locked!");
   process.exit(2);

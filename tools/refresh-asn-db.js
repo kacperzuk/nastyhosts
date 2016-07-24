@@ -6,11 +6,14 @@ if(process.argv.length < 3) {
 }
 
 const ip2asn = require('iptoasn')(process.argv[2]);
-ip2asn.load({ update: true });
-ip2asn.on('cache_locked', () => {
+ip2asn.update(null, (status) => {
+  if(status == "cache_locked") {
   console.error("Cache is locked!");
   process.exit(2);
-});
-ip2asn.on('ready', () => {
-  console.log("Done");
+  } else if(status == "finished") {
+    console.log("Done");
+  } else {
+    console.log("Unknown status", status);
+    process.exit(3);
+  }
 });
